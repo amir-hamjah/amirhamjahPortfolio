@@ -1,0 +1,188 @@
+
+.full_wrapper {
+    width: 100%;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
+ol{
+    list-style: square;
+}
+
+a{
+    text-decoration: none;
+}
+body{
+background: black;
+}
+.back_btn{
+    font-size: 30px;
+    color: #2196f3;
+    position: absolute;
+    top: 50px;
+    padding: 20px 20px;
+}
+
+.header{
+    font-family: monospace;
+    font-size: 30px;
+}
+.des{
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+.r{
+    width: 500px;
+    height: 200px;
+   
+}
+.k{
+    width: 500px;
+    height: auto;
+    position: absolute;
+    top: 200px;
+    text-transform: uppercase;
+    color: #2196f3;
+     font-family: monospace;
+}
+
+.fiverr{
+    color: forestgreen;
+    text-transform: lowercase;
+    font-family: sans-serif;
+    font-weight: 1000;
+}
+.skills{
+    font-family: consolas;
+    width: 400px;
+    height:500px;;
+    font-size: 25px;
+    position: absolute;
+    background: black;
+    left: 720px;
+    top: 85px;
+    color: #2196f3;
+    border-radius: 20%;
+    z-index: 6;
+    padding-left: 20px;
+    
+}
+.txt{
+    margin-top: 90px;
+}
+.skills_glow{
+    width: 430px;
+    height: 510px;
+    background: blue;
+    position: absolute;
+    left: 715px;
+    top:80px;
+    border-radius: 20%;
+    z-index: 5;
+    box-shadow: 0 0 30px #030374, 0 0 50px blue;;
+}
+/*NEON BUTTON STARTS HERE*/
+
+.neon_button{                     /*It is the background. Add Height Width here. Position change also here*/
+    align-items: center;
+    display: flex;
+    font-family: consolas;
+    z-index: 888;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+}
+
+.neon_button a {
+    text-decoration: none;
+    display: inline block;
+    padding: 20px 20px;        /*Change here to change the button size*/
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;            /*font size change*/
+    overflow: hidden;
+    transition: .3s;
+    position: relative;
+}
+
+.neon_button a:hover {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px#2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+
+/*BUTTONS BORDER STARTS*/
+
+.neon_button a span{
+    position: absolute;
+    display: block;
+}
+
+.neon_button a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#2196f3);
+}
+
+.neon_button a:hover span:nth-child(1){
+    left: 100%;
+    transition:1s;
+}
+
+
+.neon_button a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#2196f3);
+}
+
+
+.neon_button a:hover span:nth-child(3){
+    
+    right: 100%;
+    transition:1s;
+    transition-delay: .5s;
+}
+
+.neon_button a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#2196f3);
+}
+
+.neon_button a:hover span:nth-child(2){
+    
+    top: 100%;
+    transition:1s;
+    transition-delay: .25s;
+}
+
+
+.neon_button a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#2196f3);
+}
+
+.neon_button a:hover span:nth-child(4){
+    
+    bottom: 100%;
+    transition:1s;
+    transition-delay: .75s;
+}
+/*BUTTONS BORDER ENDS*/
+
+/*NEON BUTTON ENDS HERE*/
